@@ -13,10 +13,12 @@
             @foreach (var item in Model)
             {
                 <li class="list-group-item blue-color">
-                    @counter
-                    >@Html.DisplayFor(modelItem => item.Nombre)
-                    @Html.DisplayFor(modelItem => item.Puntos)
-                    @{counter++;}
+                    <a href="#" target="_self">
+                        @counter<span>° </span>
+                        @Html.DisplayFor(modelItem => item.Nombre)<span> - </span>
+                        @Html.DisplayFor(modelItem => item.Puntos)<span>.Pts</span>
+                        @{counter++;}
+                    </a>
                 </li>
             }
 

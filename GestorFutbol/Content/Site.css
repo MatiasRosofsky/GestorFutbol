@@ -60,6 +60,14 @@ table tr:hover{
     background-color: #295f8e;
 }
 
+.blue-color a{
+    color: #fff;
+}
+
+.blue-color a:hover{
+    color: #eee;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
