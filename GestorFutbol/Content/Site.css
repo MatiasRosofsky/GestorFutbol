@@ -52,6 +52,10 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+table td:hover{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
