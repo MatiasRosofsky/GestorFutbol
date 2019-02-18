@@ -7,13 +7,13 @@
 <!-- primeros lugares -->
 <div class="row text-center">
     <div>
-        <p class="h4 p-3 box-title">primeros lugares</p>
+        <p class="h4 p-3 box-title"><a href="/Equipos/Posiciones" target="_self">primeros lugares</a></p>
         <ul class="list-group list-group-flush">
             @{ var counter = 1;}
             @foreach (var item in Model)
             {
                 <li class="list-group-item blue-color">
-                    <a href="#" target="_self">
+                    <a href="/Equipos/details?id=@item.ID" target="_self">
                         @counter<span>° </span>
                         @Html.DisplayFor(modelItem => item.Nombre)<span> - </span>
                         @Html.DisplayFor(modelItem => item.Puntos)<span>.Pts</span>

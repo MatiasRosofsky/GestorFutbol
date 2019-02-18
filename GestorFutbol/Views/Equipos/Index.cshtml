@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<GestorFutbol.Models.Equipo>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Equipos";
 }
 
-<h2>Index</h2>
+<h2>Equipos</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -13,9 +13,6 @@
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Foto)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Puntos)
@@ -27,9 +24,6 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Foto)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Puntos)
