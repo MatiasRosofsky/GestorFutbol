@@ -32,11 +32,16 @@
                   @Html.Partial("_LoginPartial") 
             </div>
         </div>
+
+        <hr class="header-hr">
+
     </div>
-    <hr style="padding:0;margin:0">
-    <div class="container body-content" style="padding-top: 20px;">
+
+    <div class="container body-content">
+
         <div class="container">
             <div class="row">
+
                 <!-- columna izquierda -->
                 <div class="col-md-2">
                     <!-- redes sociales -->
@@ -60,20 +65,21 @@
                         </div>
                     </div>
                     <!-- end of redes sociales -->
+
                     <!-- proximos partidos -->
                     @{Html.RenderAction("_CalendarioPartial", "Home");}
                     <!-- end of proximos partidos -->
+
                 </div>
                 <!-- end of columna izquierda -->
 
-
                 <div class="col-md-8">@RenderBody()</div>
-
-
 
                 <!-- columna derecha -->
                 <div class="col-md-2">
+                    
                     @{Html.RenderAction("_PosicionesPartial", "Home");} 
+
                     <!-- titulares -->
                     <div class="row justify-content-lg-start ml-lg-2">
                         <div id="titulares">
@@ -95,19 +101,23 @@
                         </div>
                     </div>
                     <!-- end of titulares -->
+
                 </div>
                 <!-- end of columna derecha -->
             </div>
         </div>
         
-        <hr />
+        <hr>
+
         <footer>
             <p>&copy; @DateTime.Now.Year - Proyecto Gestion de Torneos</p>
         </footer>
+
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>

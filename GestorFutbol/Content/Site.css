@@ -13,8 +13,6 @@
     src: url("../fonts/NirmalaB.ttf");
 }
 
-
-
 body {
     font-family: "Bebas";
     padding-top: 50px;
@@ -24,12 +22,32 @@ body {
     background-size: cover;
     color: white;
 }
+
+.body-content{
+    padding-top: 20px;
+}
+
+.header-hr{
+    padding: 0;
+    margin: 0;
+}
+
 a{
-    color:#fff;
+    color: #fff;
 }
+
 a:hover{
-    color:#eee;
+    color: #eee;
 }
+
+.list-group a{
+    color: #333;
+}
+
+.list-group a:hover{
+    color: #666;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -54,7 +72,6 @@ textarea {
     color: white !important;
     background: none !important;
 }
-
 
 .container{
     width: 100%;
