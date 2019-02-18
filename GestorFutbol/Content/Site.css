@@ -58,7 +58,7 @@ table tr:hover{
 }
 
 .blue-color{
-    background-color: #295f8e;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .blue-color a{
