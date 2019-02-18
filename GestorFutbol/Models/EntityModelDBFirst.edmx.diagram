@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="11a8f7dcf9ef4d259bb326934d6e8dc6" Name="Diagram1">
+        <EntityTypeShape EntityType="GestorFutbolModel.Equipo" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestorFutbolModel.Jugador" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestorFutbolModel.Partido" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestorFutbolModel.Torneo" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestorFutbolModel.Torneo_Equipo" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestorFutbolModel.Torneo_Partido" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="GestorFutbolModel.FK_Jugador_Equipo" ManuallyRouted="false" />
+        <AssociationConnector Association="GestorFutbolModel.FK_Partido_Equipo" ManuallyRouted="false" />
+        <AssociationConnector Association="GestorFutbolModel.FK_Partido_Equipo1" ManuallyRouted="false" />
+        <AssociationConnector Association="GestorFutbolModel.FK_Torneo_Equipo_Equipo" ManuallyRouted="false" />
+        <AssociationConnector Association="GestorFutbolModel.FK_Torneo_Partido_Partido" ManuallyRouted="false" />
+        <AssociationConnector Association="GestorFutbolModel.FK_Torneo_Equipo_Torneo" ManuallyRouted="false" />
+        <AssociationConnector Association="GestorFutbolModel.FK_Torneo_Partido_Torneo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

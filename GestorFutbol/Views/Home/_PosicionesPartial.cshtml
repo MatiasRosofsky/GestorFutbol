@@ -1,0 +1,27 @@
+﻿@model IEnumerable<GestorFutbol.Models.Equipo>
+
+@{
+    ViewBag.Title = "Posiciones";
+}
+
+<!-- primeros lugares -->
+<div class="row text-center">
+    <div>
+        <p class="h4 p-3 box-title">primeros lugares</p>
+        <ul class="list-group list-group-flush">
+            @{ var counter = 1;}
+            @foreach (var item in Model)
+            {
+                <li class="list-group-item active">
+                    @counter
+                    >@Html.DisplayFor(modelItem => item.Nombre)
+                    @Html.DisplayFor(modelItem => item.Puntos)
+                    @{counter++;}
+                </li>
+            }
+
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end of primeros lugares -->

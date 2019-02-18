@@ -1,0 +1,51 @@
+﻿@model IEnumerable<GestorFutbol.Models.Partido>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipo.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipo3.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion)
+        </td>
+        <td>
+            <a href="/Equipos/Jugadores?id=@item.Equipo.ID">@Html.DisplayFor(modelItem => item.Equipo.Nombre)</a> 
+        </td>
+        <td>
+            <a href="/Equipos/Jugadores?id=@item.Equipo3.ID">  @Html.DisplayFor(modelItem => item.Equipo3.Nombre)</a> 
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

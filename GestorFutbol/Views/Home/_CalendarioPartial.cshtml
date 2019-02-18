@@ -1,0 +1,16 @@
+﻿@model IEnumerable<GestorFutbol.Models.Partido>
+
+<div class="row justify-content-lg-end text-center">
+    <div id="proximos">
+        <p class="h4 p-3 box-title">proximos partidos</p>
+        <ul class="list-group list-group-flush">
+           
+            @foreach (var item in Model){
+
+            <li class="list-group-item active">@Html.DisplayFor(modelItem => item.Fecha)</li>
+            <li class="list-group-item active"> <p>@Html.DisplayFor(model => item.Equipo.Nombre)</p><p> VS.</p><p> @Html.DisplayFor(model => item.Equipo3.Nombre) </p></li>
+            }
+
+        </ul>
+    </div>
+</div>
