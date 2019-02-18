@@ -7,8 +7,8 @@
            
             @foreach (var item in Model){
             <a href="#" target="_self">
-                <li class="list-group-item">@Html.DisplayFor(modelItem => item.Fecha)</li>
-                <li class="list-group-item"> <p>@Html.DisplayFor(model => item.Equipo.Nombre)</p><p> VS.</p><p> @Html.DisplayFor(model => item.Equipo3.Nombre) </p></li>
+                <li class="list-group-item blue-color">@Html.DisplayFor(modelItem => item.Fecha)</li>
+                <li class="list-group-item blue-color"> <p>@Html.DisplayFor(model => item.Equipo.Nombre)</p><p> VS.</p><p> @Html.DisplayFor(model => item.Equipo3.Nombre) </p></li>
             </a>
             }
 
