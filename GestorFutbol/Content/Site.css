@@ -48,6 +48,10 @@ a:hover{
     color: #666;
 }
 
+#barra{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
